@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20sp"
+    android:background="@drawable/text_rec">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/image_view"
+        android:background="@drawable/background"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="center_horizontal"
+        android:maxLines="8"
+        android:text=""
+        android:textSize="16sp"
+        android:background="#000"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="CAPTURE IMAGE"
+        android:padding="5dp"
+        android:layout_above="@+id/detect_text_image"
+        android:id="@+id/capture_image"
+        android:textAllCaps="false"
+        android:fontFamily="@font/bubblegum_sans"
+        android:textSize="21sp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/camera_ripple"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="DETECT TEXT"
+        android:fontFamily="@font/bubblegum_sans"
+        android:padding="5dp"
+        android:id="@+id/detect_text_image"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/detect_ripple"/>
+
+</RelativeLayout>
